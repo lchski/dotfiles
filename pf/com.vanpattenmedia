@@ -1,0 +1,7 @@
+# pf "rules file"
+# by Chris Van Patten
+#
+# This example redirects port 80 to 15021.
+# Replace 15021 with your desired port.
+
+rdr pass on lo0 inet proto tcp from any to any port 80 -> 127.0.0.1 port 15032
